@@ -1,0 +1,24 @@
+'''sumsquare(I) day1 program2'''
+
+def sumsquare(n):
+    even=0
+    odd=0
+    for i in (n):
+        if i%2==0:
+            even=even+(i**2)
+        else:
+            odd=odd+(i**2)
+    return [odd,even]
+            
+l=int(input('no of numbers:'))
+I=[]
+
+while (1):
+    n=int(input('enter n:'))
+    I.append(n)
+    if len(I)==l:
+        break
+    
+
+print(sumsquare(I))
+
