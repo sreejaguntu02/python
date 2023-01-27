@@ -1,0 +1,17 @@
+E=[1,5,9,10]
+L=[0,2,3,4]
+
+T=int(input('enter the time instance:'))
+
+x=0
+k=[]
+
+for i in range(T):
+    x=x+E[i]-L[i]
+    k.append(x)
+
+print(max(k))
+    
+
+
+
