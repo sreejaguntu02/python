@@ -1,0 +1,35 @@
+'''happy number'''
+
+
+#let temp be a temporary n
+#using the logic similar to armstrong number
+
+def sqrdig(l):
+    temp=l
+    sum=0
+
+    while temp>0:
+        dig=temp%10
+        d=dig**2
+        sum=sum+d
+        temp=temp//10
+        
+    return sum
+
+n=int(input("enter the number:"))
+
+'''between limits
+l=lower limit
+u=upper limit
+for i in range(l,u+1):'''
+
+for i in range(1,n+1): '''generate n happy numbers'''
+    temp1=i
+
+    while temp1!=1 and temp1!=4:
+        temp1=sqrdig(temp1)
+    
+    if temp1==1:
+        print(i,'is happy number')
+    elif temp1==4:
+        print(i,'is not a happy number')
