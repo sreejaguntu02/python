@@ -1,0 +1,10 @@
+s1=input("Enter the sentence: ")
+s2=s1.split(",")
+
+count=[]
+for i in range(len(s2)):
+    s3=(s2[i].split(" "))
+    count.append(len(s3))
+    
+print(max(count))
+
