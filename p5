@@ -1,0 +1,22 @@
+'''program 5: Bakery'''
+
+f=int(input('enter the no of fresh loaves:'))
+d=int(input('enter the no of day old loaves:'))
+
+rP=185
+discP= rP*0.4
+
+a1=rP*f
+a2=discP*d
+
+#%.nf is formatting operator
+
+print('Regular price:Rs.%.2f'% rP)
+
+print('Amount of new loaves:Rs.%.2f'% a1)
+print('Amount of old loaves:Rs.%.2f'% a2)
+
+print('Toatl Amount:Rs.%.2f'%(a1+a2))
+
+
+
