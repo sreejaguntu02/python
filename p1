@@ -1,0 +1,23 @@
+s=input('enter the string s:')
+t=input('enter the string t:')
+
+l1=len(s)
+l2=len(t)
+
+map1={}
+map2={}
+
+if l1==l2:
+    for i in range (l1):
+        c1=s[i]
+        c2=t[i]
+        if c1 not in map1:
+            map1[c1]=c2
+        if c2 not in map2:
+            map2[c2]=c1
+    if map1[c1]==c2 and map2[c2]==c1:
+        print('true')
+
+else:
+    print('false')
+
