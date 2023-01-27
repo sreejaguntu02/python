@@ -1,0 +1,13 @@
+def removecommon(s1,s2):
+  c=[]
+  s1=list(sent1.split())
+  s2=list(sent2.split())
+  for i in s1:
+    if i in s2:
+      s1.remove(i)
+      s2.remove(i)
+
+sent1 = input("Enter first sentence: ")
+sent2 = input("Enter second sentence: ")
+
+print(removecommon(sent1,sent2))
