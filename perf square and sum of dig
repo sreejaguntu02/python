@@ -1,0 +1,22 @@
+'''perf square and sum of dig is less than 10'''
+
+l=int(input('enter the lower range:'))
+u=int(input('enter the upper range:'))
+
+a=[]
+
+for i in range(l,u+1):
+    x=i**0.5
+    temp=i
+    sum=0
+    if int(x)==i**0.5:
+        while (temp>0):
+            dig=temp%10
+            sum=sum+dig
+            temp=temp//10
+        
+        a.append(i)
+
+
+print(a)
+        
